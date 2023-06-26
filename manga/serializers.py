@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from test_movie.models import Manga, Comment, Genre
+from manga.models import Manga, Comment, Genre
 
 
 class MangaSerializer(serializers.ModelSerializer):

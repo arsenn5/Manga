@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('test_movie', '0002_remove_manga_genre_manga_genre'),
+        ('manga', '0002_remove_manga_genre_manga_genre'),
     ]
 
     operations = [

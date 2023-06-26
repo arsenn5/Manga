@@ -1,6 +1,6 @@
 from django_filters import rest_framework as filters
 
-from test_movie.models import Manga
+from manga.models import Manga
 
 class Mangafilter(filters.FilterSet):
     type = filters.NumberFilter

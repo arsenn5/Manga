@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from test_movie.models import Manga, Type, Comment, Genre
+from manga.models import Manga, Type, Comment, Genre
 
 # Register your models here.
 

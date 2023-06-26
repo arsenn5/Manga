@@ -36,8 +36,8 @@ class Migration(migrations.Migration):
                 ('image', models.ImageField(null=True, upload_to='')),
                 ('year', models.IntegerField()),
                 ('synopsis', models.TextField(max_length=300)),
-                ('genre', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='test_movie.genre')),
-                ('type', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='test_movie.type')),
+                ('genre', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='manga.genre')),
+                ('type', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='manga.type')),
             ],
         ),
         migrations.CreateModel(
@@ -45,7 +45,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('text', models.TextField(max_length=5000, verbose_name='Сообщение')),
-                ('manga', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='comment', to='test_movie.manga', verbose_name='манга')),
+                ('manga', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='comment', to='manga.manga', verbose_name='манга')),
                 ('user', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to=settings.AUTH_USER_MODEL, verbose_name='Автор')),
             ],
         ),

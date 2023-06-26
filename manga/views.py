@@ -6,7 +6,7 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.response import Response
 from rest_framework.viewsets import ViewSet, ModelViewSet
 
-from test_movie.filters import Mangafilter
+from manga.filters import Mangafilter
 from .models import Manga, Comment
 from .serializers import MangaSerializer, MangaDetailSerializer, CommentCreateSerializer
 

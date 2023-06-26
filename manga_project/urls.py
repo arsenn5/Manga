@@ -1,5 +1,5 @@
 """
-URL configuration for test_project project.
+URL configuration for manga_project project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -19,12 +19,12 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
-from test_project import swagger
+from manga_project import swagger
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/', include('test_movie.urls')),
+    path('api/v1/', include('manga.urls')),
     path('api/v1/user/', include('user.urls'))
 ]
 

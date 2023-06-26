@@ -1,6 +1,6 @@
 from django.urls import path
 
-from test_movie.views import MangaView, MangaDetailView
+from manga.views import MangaView, MangaDetailView
 from . import views
 
 urlpatterns = [
